@@ -1,7 +1,6 @@
-import { Button } from "@/app/components/ui/button"
-import { FiDownload } from "react-icons/fi"
-
-//components
+// /app/page.tsx
+import { Button } from "@/app/components/ui/button";
+import { FiDownload } from "react-icons/fi";
 import Social from "./components/Social";
 import Photo from "@/app/components/Photo";
 import Stats from "@/app/components/Stats";
@@ -16,7 +15,7 @@ export default function Home() {
                         <h1 className="h1 mb-6">Hello I'm <br /> <span className="text-accent">Steffen</span></h1>
                         <p className="max-w-[500px] mb-9 text-white/80">Lorem Ispum lala</p>
                         <div className="flex flex-col xl:flex-row items-center gap-8">
-                            <Button size="lg" className="uppercase flex items-center gap-2 bg-accent text-primary rounded-full border-2 border-accent transition-all duration-500 hover:text-white hover:border-accent-hover hover:border-1 ">
+                            <Button size="lg" className="uppercase flex items-center gap-2 bg-accent text-primary rounded-full border-2 border-accent transition-all duration-500 hover:text-white hover:border-accent-hover hover:border-1">
                                 <span>Download CV</span>
                                 <FiDownload className="text-xl" />
                             </Button>
@@ -25,7 +24,7 @@ export default function Home() {
                             </div>
                         </div>
                     </div>
-                    <div className="order-1 xl:order-none mb-8 xl:mb-0 ">
+                    <div className="order-1 xl:order-none mb-8 xl:mb-0">
                         <Photo />
                     </div>
                 </div>
