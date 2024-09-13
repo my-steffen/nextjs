@@ -1,8 +1,7 @@
-
-export default function Resume() {
+export default function Work() {
     return (
         <div>
-            <h1>Resume</h1>
+            <h1>Work</h1>
         </div>
     );
 }

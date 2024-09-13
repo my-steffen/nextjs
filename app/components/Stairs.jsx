@@ -1,16 +1,43 @@
 "use client";
 
 import { AnimatePresence, motion } from "framer-motion";
-import { usePathname} from "next/navigation";
 
-const PageTransition = ({children}) => {
-    const pathname = usePathname();
-    return <AnimatePresence>
-        <div key={pathname}>
-            <motion.div initial={{opacity: 1}} animate={{opacity: 0, transition: {delay: 1, duration: 0.4, ease: 'easeInOut'}}} className="h-screen w-screen fixed bg-primary top-0 pointer-events-none"/>
-            {children}
-        </div>
-    </AnimatePresence>;
+const stairAnimation = {
+    initial: {
+        top: "0%",
+    },
+    animate: {
+        top: "100%",
+    },
+    exit: {
+        top: ["100%", "0%"]
+    }
+}
+
+const reverseIndex = (index)=> {
+    const totalSteps = 6;
+    return totalSteps - index - 1;
+}
+const Stairs = ({ children }) => {
+    return (
+        <>
+            {[...Array(6)].map((_, index) => (
+                <motion.div
+                    key={index}
+                    variants={stairAnimation}
+                    initial="initial"
+                    animate="animate"
+                    exit="exit"
+                    transition={{
+                        duration: 0.4,
+                        ease: 'easeInOut',
+                        delay: reverseIndex(index) * 0.1,
+                    }}
+                    className="h-full w-full bg-white relative"
+                />
+            ))}
+        </>
+    );
 };
 
-export default PageTransition;
+export default Stairs;
