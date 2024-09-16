@@ -12,7 +12,7 @@ export default function Home() {
                 <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24">
                     <div className="text-center xl:text-left order-2 xl:order-none">
                         <span className="text-xl">Web Developer</span>
-                        <h1 className="h1 mb-6">Hello I'm <br /> <span className="text-accent">Steffen</span></h1>
+                        <h1 className="h1 mb-6">Hallo ich bin <br /> <span className="text-accent">Steffen</span></h1>
                         <p className="max-w-[500px] mb-9 text-white/80">Lorem Ispum lala</p>
                         <div className="flex flex-col xl:flex-row items-center gap-8">
                             <Button size="lg" className="uppercase flex items-center gap-2 bg-accent text-primary rounded-full border-2 border-accent transition-all duration-500 hover:text-white hover:border-accent-hover hover:border-1">
