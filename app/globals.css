@@ -26,3 +26,7 @@
 .group:hover .arrow {
     transform: rotate(-45deg);
 }
+
+.tablist button {
+    @apply rounded-lg bg-[#27272c] w-full items-center justify-center inline-flex text-balance p-3 text-white whitespace-nowrap font-medium ring-offset-white transition-all disabled:pointer-events-none disabled:opacity-50 data-[state=active]:bg-accent data-[state=active]:text-primary data-[state=active]:font-bold data-[state=active]:shadow-sm;
+}
