@@ -20,18 +20,18 @@ module.exports = {
 			xl: '1200px',
 		},
 		fontFamily: {
-			primary: ("var(--font-jetbrainsMono)"),
+			primary: ("var(--font-Inter)"),
 		},
 		button: {
-			default: '#00ff99"',
+			default: '#FDC52C"',
 
 		},
 		extend: {
 			colors: {
-				primary: '#1c1c22',
+				primary: '#F9F9FA',
 				accent: {
-					DEFAULT: "#00ff99",
-					hover: "#00ff99",
+					DEFAULT: "#FDC52C",
+					hover: "#FDC52C",
 				}
 			}
 		},

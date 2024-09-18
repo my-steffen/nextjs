@@ -4,7 +4,7 @@
 
 @layer base {
     body {
-        @apply font-primary bg-primary text-white leading-loose;
+        @apply font-primary bg-primary text-[#414140] leading-loose;
     }
     .h1 {
         @apply text-[48px] xl:text-[80px] leading-[1.1] font-semibold;
@@ -16,10 +16,10 @@
         @apply text-[20px] xl:text-[24px] leading-[1.1] font-semibold;
     }
     .text-outline {
-        -webkit-text-stroke: 1px #ffffff;
+        -webkit-text-stroke: 1px #FDC52C;
     }
     .text-outline-hover {
-        -webkit-text-stroke: 1px #00ff99;
+        -webkit-text-stroke: 1px #FDC52C;
     }
 }
 
@@ -28,5 +28,5 @@
 }
 
 .tablist button {
-    @apply rounded-lg bg-[#27272c] w-full items-center justify-center inline-flex text-balance p-3 text-white whitespace-nowrap font-medium ring-offset-white transition-all disabled:pointer-events-none disabled:opacity-50 data-[state=active]:bg-accent data-[state=active]:text-primary data-[state=active]:font-bold data-[state=active]:shadow-sm;
+    @apply rounded-lg bg-[#d1d1d1] w-full items-center justify-center inline-flex text-balance p-3 text-[#414140] whitespace-nowrap font-medium ring-offset-white transition-all disabled:pointer-events-none disabled:opacity-50 data-[state=active]:bg-accent data-[state=active]:text-primary data-[state=active]:font-bold data-[state=active]:shadow-sm;
 }
