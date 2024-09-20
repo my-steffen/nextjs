@@ -6,8 +6,8 @@ import Link from "next/link";
 const services = [
     {
         num: '01',
-        title: 'Web Developer',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus accusantium architecto dolore dolorum eveniet explicabo fugit hic, illum, maiores, maxime omnis possimus quisquam repellendus rerum sint tempora tempore tenetur veritatis.',
+        title: 'Web-\n' + 'Entwicklung',
+        description: 'Ich versorge Agenturen mit einfachen bis komplexen Webentwicklungslösungen.',
         href: ""
     },
     {
@@ -24,8 +24,8 @@ const services = [
     },
     {
         num: '04',
-        title: 'Web Developer',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus accusantium architecto dolore dolorum eveniet explicabo fugit hic, illum, maiores, maxime omnis possimus quisquam repellendus rerum sint tempora tempore tenetur veritatis.',
+        title: 'UX/UI-Design',
+        description: 'kann bei der Benutzerforschung für Web- oder mobile Apps, Architektur, Wireframes und UI-Design in Xd helfen',
         href: ""
     }
 ]
@@ -34,7 +34,7 @@ import { motion } from "framer-motion";
 
 export default function Services() {
     return (
-        <section className="min-h-[80vh] flex flex-col justify-center py-12 xl:py-0">
+        <section className="min-h-[100vh] flex flex-col justify-center py-12 xl:py-0">
            <div className="container mx-auto">
                <motion.div initial={{opacity: 0}}
                            animate={{
@@ -49,20 +49,20 @@ export default function Services() {
                >
 
                    {services.map((service, index)=> {
-                       return <div key={index} className="flex flex-1 flex-col justify-center gap-6 group cardBlock">
+                       return <div key={index} className="flex flex-1 flex-col justify-center gap-6 group cardBlock p-5 rounded-lg">
                            <div className="flex w-full justify-between items-center">
                                <div className="text-6xl font-extrabold text-outline text-transparent group-hover:text-outline-hover transition-all duration-500">
                                    {service.num}
                                </div>
-                               <Link href={service.href} className="arrow w-[70px] h-[70px] rounded-full bg-[#414140] group-hover:bg-accent transition-all duration-500 flex justify-center items-center hover:-rotate-45">
-                                   <BsArrowDownRight className="text-primary text-3xl" />
+                               <Link href={service.href} className="arrow w-[70px] h-[70px] rounded-full bg-[#14141f] group-hover:bg-accent transition-all duration-500 flex justify-center items-center hover:-rotate-45">
+                                   <BsArrowDownRight className="text-white text-3xl" />
                                </Link>
                            </div>
                            <Link href={service.href}>
-                                <h2 className="text-[42px] link font-bold loading-none text-[#414140] group-hover:text-accent transition-all duration-500">{service.title}</h2>
+                                <h2 className="text-[42px] link font-bold loading-none text-white group-hover:text-accent transition-all duration-500">{service.title}</h2>
                            </Link>
-                           <p className="text-[#414140]/60">{service.description}</p>
-                           <div className="border-b border-white/20 w-full"></div>
+                           <p className="text-white/60">{service.description}</p>
+                           {/*<div className="border-b border-white/20 w-full"></div>*/}
                        </div>
                    })}
                </motion.div>

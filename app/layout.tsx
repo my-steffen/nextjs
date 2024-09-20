@@ -4,6 +4,7 @@ import { Inter } from 'next/font/google';
 import Header from './components/Header';
 import PageTransition from './components/PageTransition';
 import StairTransition from './components/StairTransition';
+import Footer from "@/app/components/Footer";
 
 const jetbrainsMono = Inter({
     subsets: ['latin'],

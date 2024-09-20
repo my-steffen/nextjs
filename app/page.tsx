@@ -7,15 +7,15 @@ import Stats from "@/app/components/Stats";
 
 export default function Home() {
     return (
-        <section className="h-full">
+        <section className="min-h-[100vh]">
             <div className="container mx-auto h-full">
                 <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24">
                     <div className="text-center xl:text-left order-2 xl:order-none">
                         <span className="text-xl">Web Developer</span>
                         <h1 className="h1 mb-6">Hallo ich bin <br /> <span className="text-accent">Steffen</span></h1>
-                        <p className="max-w-[500px] mb-9 text-[#414140]/80">Lorem Ispum lala</p>
+                        <p className="max-w-[500px] mb-9 text-white/80">Lorem Ispum lala</p>
                         <div className="flex flex-col xl:flex-row items-center gap-8">
-                            <Button size="lg" className="uppercase flex items-center gap-2 bg-accent text-primary rounded-full border-2 border-accent transition-all duration-500 hover:text-[#414140] hover:border-accent-hover hover:border-1">
+                            <Button size="lg" className="uppercase flex items-center gap-2 bg-accent text-primary rounded-full border-2 border-accent transition-all duration-500 hover:text-[#414140] hover:border-accent-hover hover:border-2 hover:text-white">
                                 <span>Download CV</span>
                                 <FiDownload className="text-xl" />
                             </Button>
