@@ -62,16 +62,16 @@ export default function ContactPage() {
                     {/* Formular */}
                     <div className="xl:h-[54%] order-2 xl:order-none">
                         <form onSubmit={onSubmit} className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl">
-                            <h3 className="text-4xl text-accent">Let's work together</h3>
+                            <h3 className="text-4xl text-accent">Let&apos;s work together</h3>
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                <Input className="inputsItem" type="text" name="firstname" placeholder="Vorname" />
-                                <Input className="inputsItem" type="text" name="lastname" placeholder="Nachname" />
-                                <Input className="inputsItem" type="email" name="email" placeholder="Email" />
-                                <Input className="inputsItem" type="text" name="mobil" placeholder="Mobil" />
+                                <Input className="inputsItem" type="text" name="firstname" placeholder="Vorname"/>
+                                <Input className="inputsItem" type="text" name="lastname" placeholder="Nachname"/>
+                                <Input className="inputsItem" type="email" name="email" placeholder="Email"/>
+                                <Input className="inputsItem" type="text" name="mobil" placeholder="Mobil"/>
                             </div>
                             <Select>
                                 <SelectTrigger className="w-full">
-                                    <SelectValue placeholder="Select a service" />
+                                    <SelectValue placeholder="Select a service"/>
                                 </SelectTrigger>
                                 <SelectContent>
                                     <SelectItem value="web-development">Web Development</SelectItem>
@@ -79,7 +79,7 @@ export default function ContactPage() {
                                     <SelectItem value="logo-design">Logo Design</SelectItem>
                                 </SelectContent>
                             </Select>
-                            <Textarea name="message" placeholder="Your message" />
+                            <Textarea name="message" placeholder="Your message"/>
                             <Button size="lg" className="max-w-40">Nachricht senden</Button>
                         </form>
                         {formResponse && (
