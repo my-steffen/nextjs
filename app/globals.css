@@ -32,11 +32,22 @@
 }
 
 .cardBlock {
-    background-image: url(https://refine.ams3.cdn.digitaloceanspaces.com/website/static/assets/landing-noise.webp), radial-gradient(50% 50% at 50% 50%, #47d1bf26 0, #47d1bf00 100%);
-    background-position: 50%, calc(50% - 30px) calc(50% + 300px);
-    background-size: auto auto, 1600px 1600px;
-    background-repeat: repeat, no-repeat;
     opacity: 1;
+    background: linear-gradient(176.9deg, #47ebeb 33.19%, #0085d0 87.69%);
+    position: relative;
+    &::after {
+        position: absolute;
+        pointer-events: none;
+        background-image: url('../public/assets/noise.png');
+        bottom: 0;
+        content: "";
+        display: block;
+        left: 0;
+        opacity: .3;
+        right: 0;
+        top: 0;
+        width: 100%;
+    }
 }
 .inputsItem {
     @apply flex h-[48px] rounded-md border-white/10 border focus:border-accent font-light bg-primary px-4 py-5 text-base placeholder:text-white/60 outline-none;
